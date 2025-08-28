@@ -2,12 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
+import { FaLinkedinIn, FaFacebook } from "react-icons/fa";
 
 function Home2() {
   return (
@@ -19,37 +15,36 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              I'm a passionate software developer with expertise in full-stack
+              development and blockchain technologies. I enjoy creating
+              innovative solutions to complex problems. 🤖
               <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C++, Javascript and Go. </b>
-              </i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              <br />I am proficient in
               <i>
                 <b className="purple">
                   {" "}
-                  Modern Javascript Library and Frameworks
+                  JavaScript, Python, Java, and Solidity.{" "}
                 </b>
               </i>
-              &nbsp; like
+              <br />
+              <br />
+              My field of Interest's are building &nbsp;
               <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="purple">Web Applications, Blockchain Systems </b>{" "}
+                and also in areas related to{" "}
+                <b className="purple">Cloud Technologies and IoT.</b>
               </i>
+              <br />
+              <br />I leverage modern technologies like{" "}
+              <b className="purple">React.js, Node.js,</b> and
+              <i>
+                <b className="purple"> Blockchain frameworks</b>
+              </i>
+              &nbsp; such as
+              <i>
+                <b className="purple"> Ethereum and Hyperledger Fabric</b>
+              </i>
+              &nbsp; to build scalable solutions.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -67,7 +62,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/MostafizFahim"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -77,17 +72,17 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href="https://www.facebook.com/mostafizurrrahman.mrf/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <AiOutlineTwitter />
+                  <FaFacebook />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/mostafiz-fahim-a430b1230/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -97,7 +92,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://www.instagram.com/mostafiz_fahim/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
