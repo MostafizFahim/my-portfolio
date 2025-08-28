@@ -783,3 +783,25 @@
     padding-left: 15px;
   }
 }
+
+/*resume*/
+.resume-section {
+  padding: 50px 0;
+  text-align: center;
+  background: linear-gradient(135deg, #0a0518 0%, #1e113f 100%);
+  min-height: 100vh;
+}
+
+.resume {
+  margin: 20px 0;
+}
+
+.react-pdf__Page {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.react-pdf__Page__canvas {
+  margin: 0 auto;
+}

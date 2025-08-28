@@ -2,28 +2,51 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/Mostafiz_Fahim_CV.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+
+// Set up PDF.js worker
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+
+  // PDF path - assuming it's in the public folder
+  const pdfPath = process.env.PUBLIC_URL + "/Mostafiz_Fahim_CV.pdf";
 
   useEffect(() => {
     setWidth(window.innerWidth);
+
+    // Update width on window resize
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+  }
 
   return (
     <div>
       <Container fluid className="resume-section">
         <Particle />
-        <Row style={{ justifyContent: "center", position: "relative" }}>
+        <Row
+          style={{
+            justifyContent: "center",
+            position: "relative",
+            marginBottom: "20px",
+          }}
+        >
           <Button
             variant="primary"
-            href={pdf}
+            href={pdfPath}
             target="_blank"
+            download
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
@@ -31,17 +54,59 @@ function ResumeNew() {
           </Button>
         </Row>
 
-        <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+        <Row className="resume" style={{ justifyContent: "center" }}>
+          <Document
+            file={pdfPath}
+            onLoadSuccess={onDocumentLoadSuccess}
+            loading={<div style={{ color: "white" }}>Loading resume...</div>}
+            error={<div style={{ color: "white" }}>Failed to load resume.</div>}
+          >
+            <Page
+              pageNumber={pageNumber}
+              scale={width > 786 ? 1.0 : 0.6}
+              width={width > 786 ? width * 0.6 : width * 0.9}
+            />
           </Document>
         </Row>
 
-        <Row style={{ justifyContent: "center", position: "relative" }}>
+        {numPages > 1 && (
+          <Row style={{ justifyContent: "center", margin: "20px 0" }}>
+            <p style={{ color: "white" }}>
+              Page {pageNumber} of {numPages}
+            </p>
+            <div>
+              <Button
+                variant="outline-light"
+                disabled={pageNumber <= 1}
+                onClick={() => setPageNumber((prev) => prev - 1)}
+                style={{ margin: "0 10px" }}
+              >
+                Previous
+              </Button>
+              <Button
+                variant="outline-light"
+                disabled={pageNumber >= numPages}
+                onClick={() => setPageNumber((prev) => prev + 1)}
+                style={{ margin: "0 10px" }}
+              >
+                Next
+              </Button>
+            </div>
+          </Row>
+        )}
+
+        <Row
+          style={{
+            justifyContent: "center",
+            position: "relative",
+            marginTop: "20px",
+          }}
+        >
           <Button
             variant="primary"
-            href={pdf}
+            href={pdfPath}
             target="_blank"
+            download
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
