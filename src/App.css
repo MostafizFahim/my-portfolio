@@ -805,3 +805,71 @@
 .react-pdf__Page__canvas {
   margin: 0 auto;
 }
+
+/* General button styling */
+.styled-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  max-width: 250px;  /* Restricting the width of the buttons */
+  width: 100%;  /* Ensuring the buttons don’t exceed their container */
+}
+
+/* Primary button (Download CV) */
+.styled-btn.primary {
+  background: linear-gradient(45deg, #4e54c8, #8f94fb);
+  color: white;
+  box-shadow: 0 4px 10px rgba(78, 84, 200, 0.3);
+}
+
+.styled-btn.primary:hover {
+  background: linear-gradient(45deg, #4e54c8, #8f94fb);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(78, 84, 200, 0.5);
+}
+
+.styled-btn.primary:focus {
+  outline: none;
+}
+
+/* Secondary button (Google Drive) */
+.styled-btn.outline-light {
+  background: transparent;
+  border: 2px solid #a0d2eb;
+  color: #a0d2eb;
+  box-shadow: 0 4px 10px rgba(160, 210, 235, 0.2);
+}
+
+.styled-btn.outline-light:hover {
+  background: rgba(160, 210, 235, 0.1);
+  color: #fff;
+  border-color: #a0d2eb;
+  transform: translateY(-2px);
+}
+
+.styled-btn.outline-light:focus {
+  outline: none;
+}
+
+/* Container for the buttons (centering them) */
+.resume-section .resume-action-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive button styling */
+@media (max-width: 768px) {
+  .styled-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

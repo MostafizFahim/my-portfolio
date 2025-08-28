@@ -16,6 +16,8 @@ function ResumeNew() {
 
   // PDF path - assuming it's in the public folder
   const pdfPath = process.env.PUBLIC_URL + "/Mostafiz_Fahim_CV.pdf";
+  const newDriveLink =
+    "https://drive.google.com/file/d/1fUXSxAXqNtKHuPcTV3bH93hYcSj46uJd/view?usp=sharing";
 
   useEffect(() => {
     setWidth(window.innerWidth);
@@ -35,6 +37,8 @@ function ResumeNew() {
     <div>
       <Container fluid className="resume-section">
         <Particle />
+
+        {/* Action Buttons */}
         <Row
           style={{
             justifyContent: "center",
@@ -47,13 +51,25 @@ function ResumeNew() {
             href={pdfPath}
             target="_blank"
             download
-            style={{ maxWidth: "250px" }}
+            className="styled-btn"
           >
             <AiOutlineDownload />
             &nbsp;Download Full CV
           </Button>
+
+          {/* Google Drive CV View Button */}
+          <Button
+            variant="outline-light"
+            href={newDriveLink}
+            target="_blank"
+            className="styled-btn"
+          >
+            <AiOutlineDownload />
+            &nbsp;View Resume on Google Drive
+          </Button>
         </Row>
 
+        {/* PDF Viewer */}
         <Row className="resume" style={{ justifyContent: "center" }}>
           <Document
             file={pdfPath}
@@ -69,32 +85,7 @@ function ResumeNew() {
           </Document>
         </Row>
 
-        {numPages > 1 && (
-          <Row style={{ justifyContent: "center", margin: "20px 0" }}>
-            <p style={{ color: "white" }}>
-              Page {pageNumber} of {numPages}
-            </p>
-            <div>
-              <Button
-                variant="outline-light"
-                disabled={pageNumber <= 1}
-                onClick={() => setPageNumber((prev) => prev - 1)}
-                style={{ margin: "0 10px" }}
-              >
-                Previous
-              </Button>
-              <Button
-                variant="outline-light"
-                disabled={pageNumber >= numPages}
-                onClick={() => setPageNumber((prev) => prev + 1)}
-                style={{ margin: "0 10px" }}
-              >
-                Next
-              </Button>
-            </div>
-          </Row>
-        )}
-
+        {/* Another Download Button */}
         <Row
           style={{
             justifyContent: "center",
@@ -107,10 +98,21 @@ function ResumeNew() {
             href={pdfPath}
             target="_blank"
             download
-            style={{ maxWidth: "250px" }}
+            className="styled-btn"
           >
             <AiOutlineDownload />
             &nbsp;Download Full CV
+          </Button>
+
+          {/* Google Drive CV View Button */}
+          <Button
+            variant="outline-light"
+            href={newDriveLink}
+            target="_blank"
+            className="styled-btn"
+          >
+            <AiOutlineDownload />
+            &nbsp;View Resume on Google Drive
           </Button>
         </Row>
       </Container>
