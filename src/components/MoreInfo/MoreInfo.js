@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card, Badge } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import Particle from "../Particle";
 
 function MoreInfo() {
@@ -37,10 +37,10 @@ function MoreInfo() {
                   <p className="info-detail">
                     Bachelor of Science in Computer Science and Engineering
                   </p>
-                  <span className="info-date">Dec 2021 - Dec 2025</span>
+                  <span className="info-date">Dec 2021 – Dec 2025</span>
                 </div>
                 <p className="info-meta">
-                  <em>CGPA: 3.072/4.00</em>
+                  <em>CGPA: 3.10/4.00</em>
                 </p>
               </Card.Body>
             </Card>
@@ -55,7 +55,7 @@ function MoreInfo() {
                   <p className="info-detail">
                     Higher Secondary Certificate (HSC), Science
                   </p>
-                  <span className="info-date">2018 - 2020</span>
+                  <span className="info-date">2018 – 2020</span>
                 </div>
                 <p className="info-meta">
                   <em>GPA: 5.00/5.00</em>
@@ -67,7 +67,7 @@ function MoreInfo() {
               <Card.Body>
                 <div className="d-flex justify-content-between flex-wrap">
                   <h5 className="info-item-title">
-                    Rani Bilashmony Govt. Boys' High School
+                    Rani Bilashmony Govt. Boys&apos; High School
                   </h5>
                   <span className="info-date">Gazipur, Bangladesh</span>
                 </div>
@@ -75,7 +75,7 @@ function MoreInfo() {
                   <p className="info-detail">
                     Secondary School Certificate (SSC), Science
                   </p>
-                  <span className="info-date">2016 - 2018</span>
+                  <span className="info-date">2016 – 2018</span>
                 </div>
                 <p className="info-meta">
                   <em>GPA: 5.00/5.00 (Scholarship)</em>
@@ -103,19 +103,19 @@ function MoreInfo() {
               <Card.Body>
                 <div className="d-flex justify-content-between flex-wrap">
                   <h5 className="info-item-title">
-                    Peer Tutor & Academic Assistant
+                    Peer Tutor &amp; Academic Assistant
                   </h5>
                   <span className="info-date">2021–2025</span>
                 </div>
                 <p className="info-institution">Department of CSE, AUST</p>
                 <ul className="info-details">
                   <li>
-                    Tutored students in Data Structures, Algorithms, and Java
-                    programming
+                    Tutored students in{" "}
+                    <strong>Data Structures, Algorithms, and Java</strong>.
                   </li>
                   <li>
-                    Assisted with debugging code and explaining complex
-                    programming concepts
+                    Helped students debug code and strengthen core programming
+                    and problem-solving concepts.
                   </li>
                 </ul>
               </Card.Body>
@@ -130,16 +130,12 @@ function MoreInfo() {
                 <p className="info-institution">AUST Computer Club</p>
                 <ul className="info-details">
                   <li>
-                    Provided technical support for university events and
-                    workshops
+                    Provided tech support during university events, workshops,
+                    and seminars.
                   </li>
                   <li>
-                    Set up and maintained computer systems and audio-visual
-                    equipment
-                  </li>
-                  <li>
-                    Assisted faculty and students with software installation and
-                    troubleshooting
+                    Configured computers, networking devices, and AV systems for
+                    smooth event operation.
                   </li>
                 </ul>
               </Card.Body>
@@ -148,24 +144,24 @@ function MoreInfo() {
             <Card className="info-card">
               <Card.Body>
                 <div className="d-flex justify-content-between flex-wrap">
-                  <h5 className="info-item-title">Freelance Web Developer</h5>
+                  <h5 className="info-item-title">
+                    Freelance Web Developer &amp; Networking Technician
+                  </h5>
                   <span className="info-date">2023 – Present</span>
                 </div>
-                <p className="info-institution">
-                  Personal Projects & Community Work
-                </p>
+                <p className="info-institution">Freelance / Client Projects</p>
                 <ul className="info-details">
                   <li>
-                    Developed simple websites and web applications for local
-                    small businesses and student organizations
+                    Developed custom <strong>PHP web applications</strong> for
+                    local businesses.
                   </li>
                   <li>
-                    Provided basic IT consultation and troubleshooting services
-                    to friends and community members
+                    Designed and documented <strong>network topologies</strong>{" "}
+                    using Cisco Packet Tracer.
                   </li>
                   <li>
-                    Used technologies including HTML, CSS, JavaScript, and PHP
-                    to create functional solutions
+                    Provided basic IT consultation and troubleshooting for
+                    community clients.
                   </li>
                 </ul>
               </Card.Body>
@@ -177,7 +173,7 @@ function MoreInfo() {
         <Row className="info-section">
           <Col md={12}>
             <h2 className="info-section-title">
-              <strong className="purple">Certifications & Training</strong>
+              <strong className="purple">Certifications &amp; Training</strong>
             </h2>
 
             <Card className="info-card">
@@ -186,11 +182,9 @@ function MoreInfo() {
                   <h5 className="info-item-title">Web Development Bootcamp</h5>
                   <span className="info-date">2025</span>
                 </div>
-                <p className="info-institution">
-                  FreeCodeCamp & Scrimba (YouTube)
-                </p>
+                <p className="info-institution">FreeCodeCamp &amp; Scrimba</p>
                 <p className="info-meta">
-                  <em>Skills: JavaScript, React.js, Frontend Development</em>
+                  <em>JavaScript, React.js, modern frontend development.</em>
                 </p>
               </Card.Body>
             </Card>
@@ -205,7 +199,7 @@ function MoreInfo() {
                   Universe Computer Training Centre, Gazipur
                 </p>
                 <p className="info-meta">
-                  <em>Skills: Adobe Photoshop, Adobe Illustrator</em>
+                  <em>Adobe Photoshop, Adobe Illustrator.</em>
                 </p>
               </Card.Body>
             </Card>
@@ -220,9 +214,52 @@ function MoreInfo() {
                   Universe Computer Training Centre, Gazipur
                 </p>
                 <p className="info-meta">
+                  <em>MS Word, MS Excel, MS PowerPoint, touch typing.</em>
+                </p>
+              </Card.Body>
+            </Card>
+
+            <Card className="info-card">
+              <Card.Body>
+                <div className="d-flex justify-content-between flex-wrap">
+                  <h5 className="info-item-title">
+                    AWS Cloud Foundations (Training)
+                  </h5>
+                  <span className="info-date">2024</span>
+                </div>
+                <p className="info-institution">Amazon Web Services</p>
+                <p className="info-meta">
+                  <em>Cloud fundamentals, AWS EC2, S3, IAM basics.</em>
+                </p>
+              </Card.Body>
+            </Card>
+
+            <Card className="info-card">
+              <Card.Body>
+                <div className="d-flex justify-content-between flex-wrap">
+                  <h5 className="info-item-title">
+                    Cisco Networking Essentials (Training)
+                  </h5>
+                  <span className="info-date">2023</span>
+                </div>
+                <p className="info-institution">Cisco Networking Academy</p>
+                <p className="info-meta">
                   <em>
-                    Skills: MS Word, MS Excel, MS PowerPoint, Touch Typing
+                    Networking basics, routing &amp; switching, subnetting.
                   </em>
+                </p>
+              </Card.Body>
+            </Card>
+
+            <Card className="info-card">
+              <Card.Body>
+                <div className="d-flex justify-content-between flex-wrap">
+                  <h5 className="info-item-title">MATLAB Onramp</h5>
+                  <span className="info-date">2024</span>
+                </div>
+                <p className="info-institution">MathWorks</p>
+                <p className="info-meta">
+                  <em>MATLAB basics, scripting, and data visualization.</em>
                 </p>
               </Card.Body>
             </Card>
@@ -240,18 +277,19 @@ function MoreInfo() {
               <Card.Body>
                 <ul className="info-details">
                   <li>
-                    Member of AUST Computer Club: Participated in programming
-                    workshops and tech seminars
+                    Active member of the <strong>AUST Computer Club</strong>;
+                    participated in workshops and tech seminars.
                   </li>
                   <li>
-                    Volunteer at university tech festivals: Assisted in event
-                    coordination and participant guidance
+                    Volunteered in university tech events and programming
+                    competitions.
                   </li>
                   <li>
-                    Regular participant in inter-department football tournaments
+                    Regular participant in inter-department football
+                    tournaments.
                   </li>
                   <li>
-                    Contributed to open-source projects on GitHub in spare time
+                    Contributed to open-source projects on GitHub in spare time.
                   </li>
                 </ul>
               </Card.Body>
@@ -273,13 +311,13 @@ function MoreInfo() {
                     <h6 className="info-subtitle">Languages:</h6>
                     <ul className="info-details">
                       <li>Bangla (Native)</li>
-                      <li>English (Professional Proficiency)</li>
+                      <li>English (Professional)</li>
                     </ul>
                   </Col>
                   <Col md={6}>
                     <h6 className="info-subtitle">Interests:</h6>
                     <ul className="info-details">
-                      <li>Open-source development</li>
+                      <li>Open-source</li>
                       <li>Hackathons</li>
                       <li>Robotics</li>
                       <li>Football</li>

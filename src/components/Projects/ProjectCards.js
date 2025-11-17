@@ -8,32 +8,54 @@ import { BsGithub } from "react-icons/bs";
 function ProjectCards(props) {
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+      {/* Project Thumbnail */}
+      <Card.Img variant="top" src={props.imgPath} alt="project-img" />
+
       <Card.Body>
+        {/* Title */}
         <Card.Title>{props.title}</Card.Title>
+
+        {/* Description */}
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
 
-        {/* Technology badges */}
+        {/* Technology Badges */}
         {props.technologies && (
           <div className="tech-badges mb-3">
             {props.technologies.map((tech, index) => (
-              <Badge key={index} bg="secondary" className="me-1 mb-1">
+              <Badge
+                key={index}
+                bg="secondary"
+                pill
+                className="me-1 mb-1 tech-badge"
+              >
                 {tech}
               </Badge>
             ))}
           </div>
         )}
 
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp; GitHub
-        </Button>
+        {/* GitHub Main Repo */}
+        {props.ghLink && (
+          <Button variant="primary" href={props.ghLink} target="_blank">
+            <BsGithub /> &nbsp; GitHub
+          </Button>
+        )}
 
-        {"\n"}
-        {"\n"}
+        {/* Optional Second GitHub Repo */}
+        {props.ghLink2 && (
+          <Button
+            variant="outline-primary"
+            href={props.ghLink2}
+            target="_blank"
+            style={{ marginLeft: "10px" }}
+          >
+            <BsGithub /> &nbsp; {props.ghLink2Text || "GitHub Repo 2"}
+          </Button>
+        )}
 
-        {/* If the component contains Demo link */}
+        {/* Demo Link */}
         {props.demoLink && (
           <Button
             variant="primary"
@@ -41,12 +63,11 @@ function ProjectCards(props) {
             target="_blank"
             style={{ marginLeft: "10px" }}
           >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
+            <CgWebsite /> &nbsp; {props.demoLinkText || "Demo"}
           </Button>
         )}
 
-        {/* Second demo link for projects with multiple repos */}
+        {/* Second Demo Link (Custom Text) */}
         {props.demoLink2 && (
           <Button
             variant="outline-primary"
@@ -54,8 +75,7 @@ function ProjectCards(props) {
             target="_blank"
             style={{ marginLeft: "10px" }}
           >
-            <BsGithub /> &nbsp;
-            {props.demoLink2Text || "Repo 2"}
+            <CgWebsite /> &nbsp; {props.demoLink2Text || "Demo 2"}
           </Button>
         )}
       </Card.Body>

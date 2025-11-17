@@ -15,36 +15,44 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I'm a passionate software developer with expertise in full-stack
-              development and blockchain technologies. I enjoy creating
-              innovative solutions to complex problems. 🤖
+              I am a Computer Science and Engineering graduate from{" "}
+              <b className="purple">AUST</b> with a strong interest in building
+              real-world systems across web, blockchain, ML, IoT, and cloud. 🚀
               <br />
-              <br />I am proficient in
+              <br />I work mainly with{" "}
               <i>
                 <b className="purple">
-                  {" "}
-                  JavaScript, Python, Java, and Solidity.{" "}
+                  C, C++, Java, Python, C#, JavaScript, PHP, SQL, and Solidity
                 </b>
-              </i>
+              </i>{" "}
+              and enjoy turning ideas into production-ready applications.
               <br />
               <br />
-              My field of Interest's are building &nbsp;
+              My key areas of interest are{" "}
               <i>
-                <b className="purple">Web Applications, Blockchain Systems </b>{" "}
-                and also in areas related to{" "}
-                <b className="purple">Cloud Technologies and IoT.</b>
+                <b className="purple">
+                  Full-Stack Web Applications, Blockchain-Based Platforms,
+                  Machine Learning Solutions,
+                </b>{" "}
+                and{" "}
+                <b className="purple">
+                  IoT Systems with ESP32 &amp; Raspberry Pi
+                </b>
+                .
               </i>
               <br />
-              <br />I leverage modern technologies like{" "}
-              <b className="purple">React.js, Node.js,</b> and
+              <br />I regularly use modern technologies like{" "}
+              <b className="purple">
+                React.js, ASP.NET, Node.js, PHP + MySQL, TensorFlow, PyTorch,
+                scikit-learn, AWS, Docker, Firebase, and ThingSpeak
+              </b>
+              , along with blockchain stacks such as{" "}
               <i>
-                <b className="purple"> Blockchain frameworks</b>
-              </i>
-              &nbsp; such as
-              <i>
-                <b className="purple"> Ethereum and Hyperledger Fabric</b>
-              </i>
-              &nbsp; to build scalable solutions.
+                <b className="purple">
+                  Ethereum, Geth, IPFS, and Hyperledger Fabric
+                </b>
+              </i>{" "}
+              to build scalable and research-driven solutions.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -53,6 +61,7 @@ function Home2() {
             </Tilt>
           </Col>
         </Row>
+
         <Row>
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
@@ -65,7 +74,7 @@ function Home2() {
                   href="https://github.com/MostafizFahim"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <AiFillGithub />
                 </a>
@@ -75,7 +84,7 @@ function Home2() {
                   href="https://www.facebook.com/mostafizurrrahman.mrf/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <FaFacebook />
                 </a>
@@ -85,7 +94,7 @@ function Home2() {
                   href="https://www.linkedin.com/in/mostafiz-fahim-a430b1230/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <FaLinkedinIn />
                 </a>
@@ -107,4 +116,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;

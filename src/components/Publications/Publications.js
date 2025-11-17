@@ -8,57 +8,63 @@ function Publications() {
     {
       id: 1,
       title:
-        "Design and Development of a Privacy-Preserving Semi-Public Blockchain-Based Ride-Sharing System using RAFT consensus with IPFS-Enabled Secure Distributed Storage",
+        "Design and Development of a Privacy-Preserving Semi-Public Blockchain-Based Ride-Sharing System Using RAFT Consensus and IPFS Storage",
       author: "2nd Author",
       journal:
         "International Journal of Advanced Information Technology (IJAIT)",
+      paperLink:
+        "https://www.researchgate.net/publication/395545438_DESIGN_AND_DEVELOPMENT_OF_A_PRIVACY-PRESERVING_SEMI-PUBLIC_BLOCKCHAIN-BASED_RIDE-SHARING_SYSTEM_USING_RAFT_CONSENSUS_WITH_IPFS-ENABLED_SECURE_DISTRIBUTED_STORAGE",
       highlights: [
-        "Architected a hybrid blockchain solution for ride-sharing, implementing a RAFT consensus mechanism for the private network to ensure fault tolerance and leader election.",
-        "Integrated IPFS for decentralized file storage to securely manage user data and transaction records, enhancing privacy and scalability beyond traditional databases.",
-        "The proposed system addressed key challenges in DApps: mitigating high gas fees, ensuring data privacy, and maintaining transaction efficiency.",
+        "Proposed a hybrid blockchain architecture integrating RAFT consensus for semi-public ride-sharing networks.",
+        "Used IPFS-based secure distributed storage to manage trip, user, and transaction data in a privacy-preserving way.",
+        "Addressed key DApp challenges including high gas fees, privacy, and decentralized data sharing efficiency.",
       ],
       type: "journal",
-      tags: ["Blockchain", "RAFT Consensus", "IPFS", "DApp"],
+      tags: ["Blockchain", "RAFT Consensus", "IPFS", "Ride-Sharing"],
     },
     {
       id: 2,
       title:
-        "A Privacy-Preserving Semi-Public Blockchain-Based Ride-Sharing Platform with Secure Distributed Data Storage Using IPFS",
+        "A Privacy-Preserving Semi-Public Blockchain Ride-Sharing Platform with IPFS Storage",
       author: "2nd Author",
       journal: "2025 IEEE QPAIN Conference",
+      paperLink: "https://ieeexplore.ieee.org/document/11171631",
       certificate:
         "https://drive.google.com/file/d/1UFEXol0cDzxzOc5FATqNMQHQaW6SVDrd/view",
       highlights: [
-        "Presented the core blockchain architecture of the NexTrip project, focusing on the smart contract design for ride matching and payment settlement on the Ethereum testnet.",
+        "Presented the NexTrip architecture focusing on smart contract–based ride matching and secure payment settlement.",
+        "Demonstrated how IPFS-backed storage and semi-public blockchain design improve privacy for riders and drivers.",
       ],
       type: "conference",
-      tags: ["Blockchain", "Ethereum", "Smart Contracts"],
+      tags: ["Blockchain", "Ethereum", "Smart Contracts", "IPFS"],
     },
     {
       id: 3,
       title:
-        "From Data to Diagnosis: Leveraging Machine Learning for Intelligent Monkeypox Prediction and Surveillance",
+        "From Data to Diagnosis: ML for Monkeypox Prediction and Surveillance",
       author: "2nd Author",
       journal: "2025 IEEE QPAIN Conference",
+      paperLink: "https://ieeexplore.ieee.org/document/11171682",
       certificate:
         "https://drive.google.com/file/d/1yzk9d6_dsczP13RRMmGaU3bL74Xs-bIQ/view",
       highlights: [
-        "Developed and compared multiple machine learning models (e.g., CNN, SVM) on clinical datasets for early detection of Monkeypox, achieving high predictive accuracy.",
-        "Contributed to feature engineering and analysis, demonstrating the application of AI for proactive public health surveillance.",
+        "Evaluated multiple ML models such as CNN, SVM, and decision trees for clinical Monkeypox prediction.",
+        "Contributed to feature engineering and experimental design for proactive disease surveillance.",
       ],
       type: "conference",
-      tags: ["Machine Learning", "CNN", "SVM", "Healthcare"],
+      tags: ["Machine Learning", "CNN", "SVM", "Healthcare AI"],
     },
     {
       id: 4,
-      title:
-        "NexTrip: A Semi-Public Blockchain Architecture for Privacy-Preserving Ride-Sharing with RAFT Consensus and IPFS-Enabled Data Storage",
+      title: "Predicting Agricultural Land Suitability Using Deep Learning",
       author: "2nd Author",
-      journal:
-        "International Conference on Multidisciplinary Computer Science, Electrical, Business & Literature (ICMCEL)",
-      highlights: [],
+      journal: "BIM 2025 Conference",
+      highlights: [
+        "Designed a deep learning model that combines soil, climate, and geospatial features for land suitability prediction.",
+        "Showcased the use of AI-driven decision support for precision agriculture and resource optimization.",
+      ],
       type: "conference",
-      tags: ["Blockchain", "Privacy", "RAFT", "IPFS"],
+      tags: ["Deep Learning", "Agriculture", "Geospatial Data"],
     },
   ];
 
@@ -72,8 +78,8 @@ function Publications() {
               My <strong className="purple">Research Publications</strong>
             </h1>
             <p className="publication-subtitle">
-              Contributions to blockchain technology and machine learning
-              research
+              Contributions to blockchain systems, machine learning, and applied
+              AI research
             </p>
           </Col>
         </Row>
@@ -93,17 +99,30 @@ function Publications() {
                         : "Conference Paper"}
                     </Badge>
 
-                    {pub.certificate && (
-                      <a
-                        href={pub.certificate}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="certificate-link"
-                      >
-                        <FaCertificate className="me-1" />
-                        View Certificate
-                      </a>
-                    )}
+                    <div className="d-flex flex-wrap gap-3 publication-links">
+                      {pub.paperLink && (
+                        <a
+                          href={pub.paperLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="paper-link"
+                        >
+                          <FaFilePdf className="me-1" />
+                          View Paper
+                        </a>
+                      )}
+                      {pub.certificate && (
+                        <a
+                          href={pub.certificate}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="certificate-link"
+                        >
+                          <FaCertificate className="me-1" />
+                          View Certificate
+                        </a>
+                      )}
+                    </div>
                   </div>
 
                   <Card.Title className="publication-title">
