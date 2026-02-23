@@ -9,7 +9,6 @@ import { AiOutlineInfoCircle } from "react-icons/ai";
 import { FaBook } from "react-icons/fa";
 
 import {
-  AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,

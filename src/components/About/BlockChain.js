@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { SiEthereum, SiHyperledger, SiIpfs } from "react-icons/si";
-import { FaEthereum, FaGlobe, FaAtom } from "react-icons/fa";
+import { FaGlobe, FaAtom } from "react-icons/fa";
 
 function Blockchain() {
   return (
