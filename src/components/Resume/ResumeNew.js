@@ -11,7 +11,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
-  const [setNumPages] = useState(null);
+  //const [setNumPages] = useState(null);
   const [pageNumber] = useState(1);
 
   // PDF path - assuming it's in the public folder
@@ -29,9 +29,9 @@ function ResumeNew() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages);
-  }
+  // function onDocumentLoadSuccess({ numPages }) {
+  //   setNumPages(numPages);
+  // }
 
   return (
     <div>
@@ -73,7 +73,7 @@ function ResumeNew() {
         <Row className="resume" style={{ justifyContent: "center" }}>
           <Document
             file={pdfPath}
-            onLoadSuccess={onDocumentLoadSuccess}
+            // onLoadSuccess={onDocumentLoadSuccess}
             loading={<div style={{ color: "white" }}>Loading resume...</div>}
             error={<div style={{ color: "white" }}>Failed to load resume.</div>}
           >
