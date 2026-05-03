@@ -8,7 +8,9 @@ import hospital from "../../Assets/Projects/hospital.png";
 import iot from "../../Assets/Projects/iot.png";
 import exam from "../../Assets/Projects/exam.png";
 import zombie from "../../Assets/Projects/zombie.png";
-import buildingPlayground from "../../Assets/Projects/building-playground.png"; // NEW
+import buildingPlayground from "../../Assets/Projects/building-playground.png";
+import bankingDashboard from "../../Assets/Projects/bankingDashboard.png";
+import keystone from "../../Assets/Projects/keystone.png";
 
 function Projects() {
   return (
@@ -55,6 +57,50 @@ function Projects() {
             />
           </Col>
 
+          {/* Banking project */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={bankingDashboard}
+              isBlog={false}
+              title="Full-Stack Banking Microservices Application"
+              description="Complete banking platform built with Angular 21 and Spring Boot microservices. Features include account management (create, view, update status), transaction operations (deposit/withdraw with real-time balance updates), transaction history tracking, and responsive dashboard with statistics. Implements REST APIs for account and transaction services with H2 database persistence. Includes form validation, toast notifications, and loading states for smooth UX."
+              ghLink="https://github.com/MostafizFahim/banking-microservices"
+              demoLink2="https://github.com/MostafizFahim/banking-microservices"
+              demoLink2Text="Live Demo"
+              technologies={[
+                "Java 23",
+                "Spring Boot 3.2.4",
+                "Angular 21",
+                "Spring Data JPA",
+                "H2 Database",
+                "Bootstrap 5",
+                "REST APIs",
+                "Maven",
+                "TypeScript",
+                "ngx-toastr",
+              ]}
+            />
+          </Col>
+
+          {/* keystone */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={keystone}
+              isBlog={false}
+              title="Keystone Education Consultancy"
+              description="A professional website for a Bangladesh-based education consultancy. Built with Next.js to provide information about study abroad services including university admission support, visa processing, and pre-departure guidance. Features service listings, study destination showcases (South Korea, Europe), a simple 6-step process guide, student success metrics, and contact information."
+              ghLink="https://github.com/MostafizFahim/keystone-education"
+              demoLink="https://keystone-education.vercel.app/"
+              technologies={[
+                "Next.js",
+                "React",
+                "JavaScript",
+                "Tailwind CSS",
+                "CSS",
+              ]}
+            />
+          </Col>
+
           {/* Hospital Management Project */}
           <Col md={4} className="project-card">
             <ProjectCard
@@ -68,6 +114,23 @@ function Projects() {
               technologies={["Java", "MySQL", "PHP", "HTML/CSS", "phpMyAdmin"]}
             />
           </Col>
+
+          {/* 3D Building & Playground Project */}
+          {/* <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={buildingPlayground}
+              isBlog={false}
+              title="3D Building & Playground — Computer Graphics"
+              description="A 3D interactive scene created using Three.js, featuring buildings and playground structures. Includes custom vertex and fragment shaders to experiment with lighting, materials, and real-time rendering for web-based computer graphics."
+              ghLink="https://github.com/MostafizFahim/A-building-and-A-playground-Three.js-project.git"
+              technologies={[
+                "Three.js",
+                "JavaScript",
+                "Computer Graphics",
+                "Custom Shaders",
+              ]}
+            />
+          </Col> */}
 
           {/* IoT Projects */}
           <Col md={4} className="project-card">
