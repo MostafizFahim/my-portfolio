@@ -16,43 +16,34 @@ function Home2() {
             </h1>
             <p className="home-about-body">
               I am a Computer Science and Engineering graduate from{" "}
-              <b className="purple">AUST</b> with a strong interest in building
-              real-world systems across web, blockchain, ML, IoT, and cloud. 🚀
+              <b className="purple">AUST</b> and currently a{" "}
+              <b className="purple">Java Developer Intern at Sonali Intellect Limited</b>.
               <br />
-              <br />I work mainly with{" "}
+              <br />I work across{" "}
               <i>
                 <b className="purple">
-                  C, C++, Java, Python, C#, JavaScript, PHP, SQL, and Solidity
+                  Java, Spring Boot, ASP.NET Core, C#, TypeScript, React,
+                  Angular, SQL, and cloud deployments
                 </b>
               </i>{" "}
-              and enjoy turning ideas into production-ready applications.
+              to build practical applications with clean API design and secure
+              authentication.
               <br />
               <br />
-              My key areas of interest are{" "}
+              My recent work includes a deployed{" "}
+              <b className="purple">AI Knowledge Base Assistant</b> with Gemini
+              API, JWT, SQLite, document chunking, and lightweight RAG, plus a{" "}
+              <b className="purple">banking application</b> with Spring Boot,
+              Angular, RBAC, PostgreSQL, charts, and CSV export.
+              <br />
+              <br />I also continue research and project work in{" "}
               <i>
                 <b className="purple">
-                  Full-Stack Web Applications, Blockchain-Based Platforms,
-                  Machine Learning Solutions,
-                </b>{" "}
-                and{" "}
-                <b className="purple">
-                  IoT Systems with ESP32 &amp; Raspberry Pi
+                  blockchain systems, IPFS-backed storage, machine learning,
+                  IoT, and applied AI
                 </b>
-                .
               </i>
-              <br />
-              <br />I regularly use modern technologies like{" "}
-              <b className="purple">
-                React.js, ASP.NET, Node.js, PHP + MySQL, TensorFlow, PyTorch,
-                scikit-learn, AWS, Docker, Firebase, and ThingSpeak
-              </b>
-              , along with blockchain stacks such as{" "}
-              <i>
-                <b className="purple">
-                  Ethereum, Geth, IPFS, and Hyperledger Fabric
-                </b>
-              </i>{" "}
-              to build scalable and research-driven solutions.
+              .
             </p>
           </Col>
           <Col md={4} className="myAvtar">

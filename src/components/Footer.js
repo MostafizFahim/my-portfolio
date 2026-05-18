@@ -1,14 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
-  let date = new Date();
-  let year = date.getFullYear();
+  const year = new Date().getFullYear();
+
   return (
     <Container fluid className="footer">
       <Row>
@@ -16,7 +13,7 @@ function Footer() {
           <h3>Designed and Developed by Mostafiz Fahim</h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} MF</h3>
+          <h3>Copyright (c) {year} MF</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">

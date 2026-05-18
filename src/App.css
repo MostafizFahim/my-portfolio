@@ -820,7 +820,7 @@
   border: none;
   cursor: pointer;
   max-width: 250px;  /* Restricting the width of the buttons */
-  width: 100%;  /* Ensuring the buttons don’t exceed their container */
+  width: 100%;  /* Ensuring the buttons do not exceed their container */
 }
 
 /* Primary button (Download CV) */
@@ -871,5 +871,189 @@
   .styled-btn {
     font-size: 14px;
     padding: 8px 16px;
+  }
+}
+
+/* 2026 refresh */
+.hero-eyebrow {
+  color: #8ee6d1;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin: 0 0 14px 50px;
+  text-transform: uppercase;
+}
+
+.hero-summary {
+  color: #edf2f7;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  max-width: 680px;
+  margin: 18px 0 0 50px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 28px 0 0 50px;
+}
+
+.hero-action {
+  align-items: center;
+  border: 1px solid rgba(142, 230, 209, 0.45);
+  border-radius: 999px;
+  color: #f8f9fa;
+  display: inline-flex;
+  gap: 8px;
+  justify-content: center;
+  min-height: 44px;
+  padding: 9px 18px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.hero-action:hover {
+  background: rgba(142, 230, 209, 0.12);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.hero-action-primary {
+  background: linear-gradient(135deg, #7c3aed 0%, #0f9f91 100%);
+  border-color: transparent;
+}
+
+.hero-proof-strip {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 28px 0 0 50px;
+  max-width: 640px;
+}
+
+.hero-proof-strip div {
+  border: 1px solid rgba(142, 230, 209, 0.2);
+  border-radius: 8px;
+  background: rgba(12, 18, 32, 0.62);
+  padding: 12px 14px;
+}
+
+.hero-proof-strip strong {
+  color: #8ee6d1;
+  display: block;
+  font-size: 1.35rem;
+  line-height: 1.1;
+}
+
+.hero-proof-strip span {
+  color: #d8d9ff;
+  display: block;
+  font-size: 0.86rem;
+  margin-top: 4px;
+}
+
+.hero-type {
+  padding: 34px 0 0 50px;
+  text-align: left;
+}
+
+.project-card-view .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card-view .btn {
+  align-self: flex-start;
+  margin-bottom: 8px;
+  white-space: normal;
+}
+
+.research-profile-link {
+  display: inline-flex;
+  margin-top: 12px;
+}
+
+.paper-link {
+  color: #4fd1c5;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.paper-link:hover {
+  color: #81e6d9;
+}
+
+.more-info-section {
+  background:
+    radial-gradient(circle at 20% 0%, rgba(79, 209, 197, 0.12), transparent 30%),
+    linear-gradient(135deg, #070912 0%, #171234 52%, #081b22 100%) !important;
+}
+
+.info-card {
+  background: rgba(13, 18, 31, 0.92) !important;
+  border: 1px solid rgba(142, 230, 209, 0.28) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28) !important;
+}
+
+.info-card .card-body,
+.info-item-title,
+.info-detail,
+.info-details,
+.info-institution,
+.info-subtitle {
+  color: #f7fafc !important;
+}
+
+.info-date,
+.info-meta {
+  color: #8ee6d1 !important;
+}
+
+.info-card:hover {
+  background: rgba(17, 25, 42, 0.98) !important;
+  transform: translateY(-3px);
+}
+
+.info-card:hover .info-item-title,
+.info-card:hover .info-date,
+.info-card:hover .info-institution,
+.info-card:hover .info-details,
+.info-card:hover .info-meta,
+.info-card:hover .info-detail {
+  color: inherit !important;
+}
+
+@media (max-width: 767px) {
+  .hero-eyebrow,
+  .hero-summary,
+  .hero-actions,
+  .hero-proof-strip,
+  .hero-type {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .hero-summary {
+    font-size: 0.98rem;
+  }
+
+  .hero-proof-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-type .Typewriter__wrapper {
+    display: inline-block !important;
+    position: static !important;
+  }
+
+  .hero-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .hero-action {
+    width: 100%;
   }
 }

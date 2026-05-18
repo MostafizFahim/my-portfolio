@@ -11,13 +11,18 @@ import {
   SiArduino,
   SiRaspberrypi,
   SiLatex,
+  SiSwagger,
+  SiRender,
+  SiVercel,
+  SiIntellijidea,
+  SiEclipseide,
+  SiRailway,
 } from "react-icons/si";
 import { FaCalculator } from "react-icons/fa";
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      {/* Tools & Software */}
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
         <span className="icon-tooltip">Git</span>
@@ -27,8 +32,12 @@ function Toolstack() {
         <span className="icon-tooltip">VS Code</span>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiAndroid />
-        <span className="icon-tooltip">Android Studio</span>
+        <SiIntellijidea />
+        <span className="icon-tooltip">IntelliJ IDEA</span>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiEclipseide />
+        <span className="icon-tooltip">Eclipse</span>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiVisualstudio />
@@ -39,6 +48,14 @@ function Toolstack() {
         <span className="icon-tooltip">Postman</span>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+        <SiSwagger />
+        <span className="icon-tooltip">Swagger</span>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiAndroid />
+        <span className="icon-tooltip">Android Studio</span>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <FaCalculator />
         <span className="icon-tooltip">MATLAB</span>
       </Col>
@@ -47,10 +64,21 @@ function Toolstack() {
         <span className="icon-tooltip">LaTeX</span>
       </Col>
 
-      {/* Cloud & DevOps */}
       <Col xs={4} md={2} className="tech-icons">
         <SiDocker />
         <span className="icon-tooltip">Docker</span>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiRender />
+        <span className="icon-tooltip">Render</span>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiRailway />
+        <span className="icon-tooltip">Railway</span>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiVercel />
+        <span className="icon-tooltip">Vercel</span>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiAmazonaws />
@@ -65,7 +93,6 @@ function Toolstack() {
         <span className="icon-tooltip">Azure DevOps</span>
       </Col>
 
-      {/* IoT & Embedded Systems */}
       <Col xs={4} md={2} className="tech-icons">
         <SiArduino />
         <span className="icon-tooltip">Arduino</span>

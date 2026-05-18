@@ -11,6 +11,8 @@ import zombie from "../../Assets/Projects/zombie.png";
 import buildingPlayground from "../../Assets/Projects/building-playground.png";
 import bankingDashboard from "../../Assets/Projects/bankingDashboard.png";
 import keystone from "../../Assets/Projects/keystone.png";
+import codeEditor from "../../Assets/Projects/codeEditor.png";
+import projectImg from "../../Assets/Projects/project.png";
 
 function Projects() {
   return (
@@ -21,93 +23,122 @@ function Projects() {
           My Recent <strong className="purple">Projects</strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are some of the projects I have worked on during my studies and
-          research journey.
+          Selected work from my CV and GitHub, including deployed full-stack,
+          AI, banking, blockchain, mobile, and embedded systems projects.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          {/* NexTrip Project */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={codeEditor}
+              isBlog={false}
+              title="AI Knowledge Base Assistant"
+              description="A deployed document Q&A system using ASP.NET Core Web API, React, TypeScript, SQLite, JWT, and Gemini API. Implements lightweight RAG with document chunking, keyword retrieval, prompt construction, context-aware answers, chat history, PDF/CSV uploads, and Swagger-tested secure APIs."
+              ghLink="https://github.com/MostafizFahim/ai-knowledge-base-assistant"
+              demoLink="https://ai-knowledge-base-assistant-nu.vercel.app"
+              demoLink2="https://ai-knowledge-base-assistant-production.up.railway.app/health"
+              demoLink2Text="API Health"
+              technologies={[
+                "ASP.NET Core",
+                "C#",
+                "EF Core",
+                "SQLite",
+                "JWT",
+                "Gemini API",
+                "React",
+                "TypeScript",
+                "Tailwind CSS",
+                "Vercel",
+                "Railway",
+              ]}
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={bankingDashboard}
+              isBlog={false}
+              title="Banking Microservices Application"
+              description="A deployed banking application built with Spring Boot and Angular. Includes JWT authentication, role-based access for customers and admins, account management, deposits, withdrawals, transaction history, CSV export, analytics charts, H2 for development, and Supabase PostgreSQL in production."
+              ghLink="https://github.com/MostafizFahim/banking-microservices"
+              demoLink="https://banking-microservices-eta.vercel.app/login"
+              demoLink2="https://banking-api-production-247d.up.railway.app"
+              demoLink2Text="Backend API"
+              technologies={[
+                "Java 21",
+                "Spring Boot",
+                "Spring Security",
+                "Angular 21",
+                "TypeScript",
+                "PostgreSQL",
+                "JWT",
+                "Chart.js",
+                "Railway",
+                "Vercel",
+              ]}
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={nextrip}
               isBlog={false}
               title="NexTrip: Hybrid Blockchain Ride-Sharing Platform"
-              description="Thesis project: a full-stack decentralized ride-sharing system using a hybrid blockchain architecture. The web app is built with React.js, while ride logic is implemented via Ethereum smart contracts for on-chain operations and Hyperledger Fabric for off-chain private processing. Includes a cross-platform mobile app built with React Native, featuring wallet integration, secure authentication, and gas-optimized contract calls."
+              description="Thesis project: a decentralized ride-sharing platform using React.js, Ethereum smart contracts, Hyperledger Fabric, IPFS-backed design concepts, and React Native. The work connects privacy-preserving blockchain research with full-stack ride-sharing workflows."
               ghLink="https://github.com/MostafizFahim/Ride-Sharing-Dapp-Web-Thesis-project.git"
               demoLink2="https://github.com/MostafizFahim/NexTrip-Ride-Sharing-Dapp-Mobile.git"
               demoLink2Text="Mobile App"
               technologies={[
                 "React.js",
-                "React Native (Expo)",
-                "Ethereum Smart Contracts",
+                "React Native",
+                "Ethereum",
                 "Hyperledger Fabric",
                 "Node.js",
+                "Web3.js",
+                "IPFS",
               ]}
             />
           </Col>
 
-          {/* Cloud Restaurant Project */}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={cloudRestaurant}
               isBlog={false}
-              title="Cloud Restaurant: Full-Stack ASP.NET Application"
-              description="A restaurant management system built with ASP.NET, C#, and MS SQL Server. Provides modules for menu, orders, customers, and admin with full CRUD support. Uses Razor pages for a responsive UI and a normalized database schema, ensuring smooth and efficient backend–database integration."
+              title="Cloud Restaurant Management System"
+              description="Restaurant management software built with ASP.NET Core, C#, MS SQL Server, Razor Pages, and admin dashboard features. Covers menu, order, customer, and admin workflows with CRUD operations and a normalized database schema."
               ghLink="https://github.com/MostafizFahim/Cloud-Restaurant.git"
-              technologies={["ASP.NET", "C#", "MS SQL Server", "Razor Pages"]}
+              technologies={["ASP.NET Core", "C#", "MS SQL Server", "Razor Pages"]}
             />
           </Col>
 
-          {/* Banking project */}
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bankingDashboard}
-              isBlog={false}
-              title="Full-Stack Banking Microservices Application"
-              description="Complete banking platform built with Angular 21 and Spring Boot microservices. Features include account management (create, view, update status), transaction operations (deposit/withdraw with real-time balance updates), transaction history tracking, and responsive dashboard with statistics. Implements REST APIs for account and transaction services with H2 database persistence. Includes form validation, toast notifications, and loading states for smooth UX."
-              ghLink="https://github.com/MostafizFahim/banking-microservices"
-              demoLink2="https://github.com/MostafizFahim/banking-microservices"
-              demoLink2Text="Live Demo"
-              technologies={[
-                "Java 23",
-                "Spring Boot 3.2.4",
-                "Angular 21",
-                "Spring Data JPA",
-                "H2 Database",
-                "Bootstrap 5",
-                "REST APIs",
-                "Maven",
-                "TypeScript",
-                "ngx-toastr",
-              ]}
-            />
-          </Col>
-
-          {/* keystone */}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={keystone}
               isBlog={false}
               title="Keystone Education Consultancy"
-              description="A professional website for a Bangladesh-based education consultancy. Built with Next.js to provide information about study abroad services including university admission support, visa processing, and pre-departure guidance. Features service listings, study destination showcases (South Korea, Europe), a simple 6-step process guide, student success metrics, and contact information."
+              description="A professional Next.js website for a Bangladesh-based education consultancy. It presents study abroad services, destination pages, a 6-step process guide, student success metrics, and contact details in a responsive experience."
               ghLink="https://github.com/MostafizFahim/keystone-education"
               demoLink="https://keystone-education.vercel.app/"
-              technologies={[
-                "Next.js",
-                "React",
-                "JavaScript",
-                "Tailwind CSS",
-                "CSS",
-              ]}
+              technologies={["Next.js", "React", "JavaScript", "Tailwind CSS"]}
             />
           </Col>
 
-          {/* Hospital Management Project */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={projectImg}
+              isBlog={false}
+              title="Shopping App - Kotlin & Firebase"
+              description="Android shopping application built with Kotlin and Firebase. It expands my mobile development work beyond Java Android projects into modern Kotlin-based app development and cloud-backed data workflows."
+              ghLink="https://github.com/MostafizFahim/Shopping-App-Android-Studio-Kotlin-Firebase"
+              technologies={["Kotlin", "Android Studio", "Firebase", "Mobile App"]}
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={hospital}
               isBlog={false}
-              title="Hospital Management Systems (Java & PHP)"
-              description="Two hospital management systems designed for managing patients, appointments, billing, and staff. The desktop version is implemented in Java with a GUI and MySQL backend, while the web version uses PHP, HTML/CSS, and MySQL (managed via phpMyAdmin) to provide browser-based access for hospital staff."
+              title="Hospital Management Systems"
+              description="Two hospital management systems for patients, appointments, billing, and staff. The desktop version uses Java and MySQL, while the web version uses PHP, HTML/CSS, and MySQL through phpMyAdmin."
               ghLink="https://github.com/MostafizFahim/Better-Life-Hospital.git"
               demoLink2="https://github.com/MostafizFahim/Hospital-Management-System.git"
               demoLink2Text="PHP Web Version"
@@ -115,30 +146,12 @@ function Projects() {
             />
           </Col>
 
-          {/* 3D Building & Playground Project */}
-          {/* <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={buildingPlayground}
-              isBlog={false}
-              title="3D Building & Playground — Computer Graphics"
-              description="A 3D interactive scene created using Three.js, featuring buildings and playground structures. Includes custom vertex and fragment shaders to experiment with lighting, materials, and real-time rendering for web-based computer graphics."
-              ghLink="https://github.com/MostafizFahim/A-building-and-A-playground-Three.js-project.git"
-              technologies={[
-                "Three.js",
-                "JavaScript",
-                "Computer Graphics",
-                "Custom Shaders",
-              ]}
-            />
-          </Col> */}
-
-          {/* IoT Projects */}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={iot}
               isBlog={false}
               title="IoT & Embedded Systems Projects"
-              description="A collection of embedded systems projects, including an Automated Toll Collection System using Arduino Uno, RFID, and servomotors, and a Smart IoT Healthcare system using ESP32 and Raspberry Pi for real-time ECG, SpO₂, temperature, and humidity monitoring. Integrated Firebase and ThingSpeak dashboards enable remote vital sign analytics."
+              description="Embedded systems work including an automated toll collection system using Arduino Uno, RFID, and servomotors, plus a smart IoT healthcare system using ESP32 and Raspberry Pi for ECG, SpO2, temperature, humidity, and remote monitoring dashboards."
               ghLink="https://github.com/MostafizFahim/Automated-Toll-Collection-System-Arduino.git"
               demoLink2="https://github.com/MostafizFahim/Smart-IoT-Healthcare-Real-Time-Vital-Sign-Tracking-and-ECG-Arrhythmia-Detection-Using-ESP32.git"
               demoLink2Text="IoT Health Monitor"
@@ -147,7 +160,7 @@ function Projects() {
                 "ESP32",
                 "Raspberry Pi",
                 "RFID",
-                "Sensors (ECG, SpO₂, Temp/Hum)",
+                "Sensors",
                 "Firebase",
                 "ThingSpeak",
                 "MQTT",
@@ -155,42 +168,34 @@ function Projects() {
             />
           </Col>
 
-          {/* Exam Enrollment Project */}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={exam}
               isBlog={false}
-              title="Exam Enrollment System — Android"
-              description="A native Android application built with Java to streamline course exam enrollment for students. Implements intuitive screens for course selection and registration workflows, with local data handling for a smooth offline-friendly user experience."
+              title="Exam Enrollment System - Android"
+              description="A native Android application built with Java to streamline course exam enrollment for students. It implements clear course selection and registration workflows with local data handling."
               ghLink="https://github.com/MostafizFahim/Exam-Enrollment-System-Android.git"
               technologies={["Java", "Android Studio", "Android SDK"]}
             />
           </Col>
 
-          {/* 3D Building & Playground Project */}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={buildingPlayground}
               isBlog={false}
-              title="3D Building & Playground — Computer Graphics"
-              description="A 3D interactive scene created using Three.js, featuring buildings and playground structures. Includes custom vertex and fragment shaders to experiment with lighting, materials, and real-time rendering for web-based computer graphics."
+              title="3D Building & Playground - Computer Graphics"
+              description="A Three.js interactive graphics scene featuring buildings and playground structures. Includes custom vertex and fragment shader experimentation for lighting, materials, and real-time rendering."
               ghLink="https://github.com/MostafizFahim/A-building-and-A-playground-Three.js-project.git"
-              technologies={[
-                "Three.js",
-                "JavaScript",
-                "Computer Graphics",
-                "Custom Shaders",
-              ]}
+              technologies={["Three.js", "JavaScript", "Computer Graphics", "Shaders"]}
             />
           </Col>
 
-          {/* Zombie Attack Project */}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={zombie}
               isBlog={false}
-              title="Zombie Attack — 2D Game"
-              description="A 2D survival game implemented in C using the igraphics.h library. Features player movement, enemy spawning, scoring, and basic game mechanics that showcase graphics rendering, event handling, and fundamental game development concepts."
+              title="Zombie Attack - 2D Game"
+              description="A 2D survival game implemented in C using the igraphics.h library. Features player movement, enemy spawning, scoring, event handling, and basic graphics rendering."
               ghLink="https://github.com/MostafizFahim/Zombie-Attack-i-graphics.git"
               technologies={["C", "igraphics.h", "2D Game Development"]}
             />

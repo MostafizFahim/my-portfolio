@@ -8,47 +8,41 @@ function Publications() {
     {
       id: 1,
       title:
-        "Design and Development of a Privacy-Preserving Semi-Public Blockchain-Based Ride-Sharing System Using RAFT Consensus and IPFS Storage",
+        "Predicting Agricultural Land Suitability and Soil Quality: A Deep Learning Approach for Precision Agriculture",
       author: "2nd Author",
-      journal:
-        "International Journal of Advanced Information Technology (IJAIT)",
-      paperLink:
-        "https://www.researchgate.net/publication/395545438_DESIGN_AND_DEVELOPMENT_OF_A_PRIVACY-PRESERVING_SEMI-PUBLIC_BLOCKCHAIN-BASED_RIDE-SHARING_SYSTEM_USING_RAFT_CONSENSUS_WITH_IPFS-ENABLED_SECURE_DISTRIBUTED_STORAGE",
+      journal: "Springer Conference",
+      paperLink: "https://link.springer.com/chapter/10.1007/978-3-032-15764-5_39",
       highlights: [
-        "Proposed a hybrid blockchain architecture integrating RAFT consensus for semi-public ride-sharing networks.",
-        "Used IPFS-based secure distributed storage to manage trip, user, and transaction data in a privacy-preserving way.",
-        "Addressed key DApp challenges including high gas fees, privacy, and decentralized data sharing efficiency.",
+        "Developed a deep learning-based approach for agricultural land suitability and soil quality prediction.",
+        "Focused on AI-driven decision support for precision agriculture and resource optimization.",
       ],
-      type: "journal",
-      tags: ["Blockchain", "RAFT Consensus", "IPFS", "Ride-Sharing"],
+      type: "conference",
+      tags: ["Deep Learning", "Agriculture", "Soil Quality"],
     },
     {
       id: 2,
       title:
-        "A Privacy-Preserving Semi-Public Blockchain Ride-Sharing Platform with IPFS Storage",
+        "NexTrip: A Semi-Public Blockchain Architecture for Privacy-Preserving Ride-Sharing with RAFT Consensus and IPFS-Enabled Data Storage",
       author: "2nd Author",
-      journal: "2025 IEEE QPAIN Conference",
-      paperLink: "https://ieeexplore.ieee.org/document/11171631",
-      certificate:
-        "https://drive.google.com/file/d/1UFEXol0cDzxzOc5FATqNMQHQaW6SVDrd/view",
+      journal: "IEEE ICCIT 2025",
+      paperLink: "https://ieeexplore.ieee.org/document/11491718",
       highlights: [
-        "Presented the NexTrip architecture focusing on smart contract–based ride matching and secure payment settlement.",
-        "Demonstrated how IPFS-backed storage and semi-public blockchain design improve privacy for riders and drivers.",
+        "Proposed a privacy-preserving semi-public blockchain ride-sharing architecture.",
+        "Used RAFT consensus and IPFS-enabled storage for secure distributed trip data.",
       ],
       type: "conference",
-      tags: ["Blockchain", "Ethereum", "Smart Contracts", "IPFS"],
+      tags: ["Blockchain", "RAFT Consensus", "IPFS", "Ride-Sharing"],
     },
     {
       id: 3,
-      title:
-        "From Data to Diagnosis: ML for Monkeypox Prediction and Surveillance",
+      title: "Machine Learning for Monkeypox Prediction",
       author: "2nd Author",
-      journal: "2025 IEEE QPAIN Conference",
+      journal: "IEEE QPAIN 2025",
       paperLink: "https://ieeexplore.ieee.org/document/11171682",
       certificate:
         "https://drive.google.com/file/d/1yzk9d6_dsczP13RRMmGaU3bL74Xs-bIQ/view",
       highlights: [
-        "Evaluated multiple ML models such as CNN, SVM, and decision trees for clinical Monkeypox prediction.",
+        "Compared CNN, SVM, and Decision Tree models for disease prediction.",
         "Contributed to feature engineering and experimental design for proactive disease surveillance.",
       ],
       type: "conference",
@@ -56,15 +50,16 @@ function Publications() {
     },
     {
       id: 4,
-      title: "Predicting Agricultural Land Suitability Using Deep Learning",
+      title: "Design of Blockchain Ride-Sharing with IPFS",
       author: "2nd Author",
-      journal: "BIM 2025 Conference",
+      journal: "IJAIT Journal",
+      paperLink: "https://www.researchgate.net/publication/395545438",
       highlights: [
-        "Designed a deep learning model that combines soil, climate, and geospatial features for land suitability prediction.",
-        "Showcased the use of AI-driven decision support for precision agriculture and resource optimization.",
+        "Designed a scalable ride-sharing system architecture using IPFS and RAFT consensus.",
+        "Addressed decentralized privacy, storage, and transaction design challenges.",
       ],
-      type: "conference",
-      tags: ["Deep Learning", "Agriculture", "Geospatial Data"],
+      type: "journal",
+      tags: ["Blockchain", "IPFS", "RAFT", "DApp"],
     },
   ];
 
@@ -81,6 +76,14 @@ function Publications() {
               Contributions to blockchain systems, machine learning, and applied
               AI research
             </p>
+            <a
+              className="paper-link research-profile-link"
+              href="https://www.researchgate.net/profile/Mostafiz-Fahim/research"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View ResearchGate Profile
+            </a>
           </Col>
         </Row>
 

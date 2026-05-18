@@ -6,39 +6,27 @@ import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 
-// Set up PDF.js worker
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
-  //const [setNumPages] = useState(null);
   const [pageNumber] = useState(1);
-
-  // PDF path - assuming it's in the public folder
   const pdfPath = process.env.PUBLIC_URL + "/Mostafiz_Fahim_CV.pdf";
-  const newDriveLink =
-    "https://drive.google.com/file/d/1fUXSxAXqNtKHuPcTV3bH93hYcSj46uJd/view?usp=sharing";
 
   useEffect(() => {
     setWidth(window.innerWidth);
 
-    // Update width on window resize
     const handleResize = () => setWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // function onDocumentLoadSuccess({ numPages }) {
-  //   setNumPages(numPages);
-  // }
-
   return (
     <div>
       <Container fluid className="resume-section">
         <Particle />
 
-        {/* Action Buttons */}
         <Row
           style={{
             justifyContent: "center",
@@ -54,26 +42,13 @@ function ResumeNew() {
             className="styled-btn"
           >
             <AiOutlineDownload />
-            &nbsp;Download Full CV
-          </Button>
-
-          {/* Google Drive CV View Button */}
-          <Button
-            variant="outline-light"
-            href={newDriveLink}
-            target="_blank"
-            className="styled-btn"
-          >
-            <AiOutlineDownload />
-            &nbsp;View Resume on Google Drive
+            &nbsp;Download Latest CV
           </Button>
         </Row>
 
-        {/* PDF Viewer */}
         <Row className="resume" style={{ justifyContent: "center" }}>
           <Document
             file={pdfPath}
-            // onLoadSuccess={onDocumentLoadSuccess}
             loading={<div style={{ color: "white" }}>Loading resume...</div>}
             error={<div style={{ color: "white" }}>Failed to load resume.</div>}
           >
@@ -85,7 +60,6 @@ function ResumeNew() {
           </Document>
         </Row>
 
-        {/* Another Download Button */}
         <Row
           style={{
             justifyContent: "center",
@@ -101,18 +75,7 @@ function ResumeNew() {
             className="styled-btn"
           >
             <AiOutlineDownload />
-            &nbsp;Download Full CV
-          </Button>
-
-          {/* Google Drive CV View Button */}
-          <Button
-            variant="outline-light"
-            href={newDriveLink}
-            target="_blank"
-            className="styled-btn"
-          >
-            <AiOutlineDownload />
-            &nbsp;View Resume on Google Drive
+            &nbsp;Download Latest CV
           </Button>
         </Row>
       </Container>

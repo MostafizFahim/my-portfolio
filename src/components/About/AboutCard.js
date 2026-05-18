@@ -12,35 +12,36 @@ function AboutCard() {
             <span className="purple">Mostafizur Rahman Fahim</span> from{" "}
             <span className="purple">Dhaka, Bangladesh.</span>
             <br />
-            I am a Computer Science & Engineering graduate from Ahsanullah
-            University of Science and Technology (AUST).
+            I graduated in Computer Science and Engineering from Ahsanullah
+            University of Science and Technology (AUST), and I am now building
+            enterprise banking features as a Java Developer Intern at Sonali
+            Intellect Limited.
             <br />
-            I am passionate about full-stack development, blockchain systems,
-            machine learning, IoT, and cloud technologies—building solutions
-            that combine software, hardware, and research.
+            I enjoy turning ideas into working software: backend services,
+            secure APIs, full-stack products, AI-assisted workflows, and
+            research-driven blockchain systems.
             <br />
             <br />
-            Apart from coding, here are a few activities I love doing!
+            Outside daily engineering work, I like spending time on:
           </p>
 
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Open-source contributions & GitHub projects
+              <ImPointRight /> AI knowledge-base and document Q&A systems
             </li>
             <li className="about-activity">
-              <ImPointRight /> Exploring IoT, robotics & embedded systems
+              <ImPointRight /> Open-source projects and GitHub experiments
             </li>
             <li className="about-activity">
-              <ImPointRight /> Participating in tech workshops & university
-              events
+              <ImPointRight /> Blockchain, IPFS, and privacy-preserving systems
             </li>
             <li className="about-activity">
-              <ImPointRight /> Playing football and cricket
+              <ImPointRight /> Football, hackathons, and competitive programming
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Build solutions that create real impact and inspire innovation."
+            "Build useful systems, learn deeply, and keep improving the craft."
           </p>
           <footer className="blockquote-footer">Mostafiz</footer>
         </blockquote>
