@@ -16,19 +16,18 @@ function ProjectCards(props) {
         <Card.Title>{props.title}</Card.Title>
 
         {/* Description */}
-        <Card.Text style={{ textAlign: "justify" }}>
+        <Card.Text className="project-description">
           {props.description}
         </Card.Text>
 
         {/* Technology Badges */}
         {props.technologies && (
-          <div className="tech-badges mb-3">
+          <div className="tech-badges">
             {props.technologies.map((tech, index) => (
               <Badge
                 key={index}
                 bg="secondary"
-                pill
-                className="me-1 mb-1 tech-badge"
+                className="tech-badge"
               >
                 {tech}
               </Badge>
@@ -36,48 +35,35 @@ function ProjectCards(props) {
           </div>
         )}
 
-        {/* GitHub Main Repo */}
-        {props.ghLink && (
-          <Button variant="primary" href={props.ghLink} target="_blank">
-            <BsGithub /> &nbsp; GitHub
-          </Button>
-        )}
+        <div className="project-actions">
+          {/* GitHub Main Repo */}
+          {props.ghLink && (
+            <Button variant="primary" href={props.ghLink} target="_blank">
+              <BsGithub /> GitHub
+            </Button>
+          )}
 
-        {/* Optional Second GitHub Repo */}
-        {props.ghLink2 && (
-          <Button
-            variant="outline-primary"
-            href={props.ghLink2}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
-            <BsGithub /> &nbsp; {props.ghLink2Text || "GitHub Repo 2"}
-          </Button>
-        )}
+          {/* Optional Second GitHub Repo */}
+          {props.ghLink2 && (
+            <Button variant="outline-primary" href={props.ghLink2} target="_blank">
+              <BsGithub /> {props.ghLink2Text || "GitHub Repo 2"}
+            </Button>
+          )}
 
-        {/* Demo Link */}
-        {props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
-            <CgWebsite /> &nbsp; {props.demoLinkText || "Demo"}
-          </Button>
-        )}
+          {/* Demo Link */}
+          {props.demoLink && (
+            <Button variant="primary" href={props.demoLink} target="_blank">
+              <CgWebsite /> {props.demoLinkText || "Demo"}
+            </Button>
+          )}
 
-        {/* Second Demo Link (Custom Text) */}
-        {props.demoLink2 && (
-          <Button
-            variant="outline-primary"
-            href={props.demoLink2}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
-            <CgWebsite /> &nbsp; {props.demoLink2Text || "Demo 2"}
-          </Button>
-        )}
+          {/* Second Demo Link (Custom Text) */}
+          {props.demoLink2 && (
+            <Button variant="outline-primary" href={props.demoLink2} target="_blank">
+              <CgWebsite /> {props.demoLink2Text || "Demo 2"}
+            </Button>
+          )}
+        </div>
       </Card.Body>
     </Card>
   );

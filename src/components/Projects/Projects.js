@@ -32,23 +32,19 @@ function Projects() {
               imgPath={codeEditor}
               isBlog={false}
               title="AI Knowledge Base Assistant"
-              description="A deployed document Q&A system using ASP.NET Core Web API, React, TypeScript, SQLite, JWT, and Gemini API. Implements lightweight RAG with document chunking, keyword retrieval, prompt construction, context-aware answers, chat history, PDF/CSV uploads, and Swagger-tested secure APIs."
+              description="A deployed document Q&A platform with secure auth, PDF/CSV uploads, chat history, and Gemini-powered answers. Uses lightweight RAG with document chunking, keyword retrieval, and context-aware prompt construction."
               ghLink="https://github.com/MostafizFahim/ai-knowledge-base-assistant"
               demoLink="https://ai-knowledge-base-assistant-nu.vercel.app"
               demoLink2="https://ai-knowledge-base-assistant-production.up.railway.app/health"
               demoLink2Text="API Health"
               technologies={[
                 "ASP.NET Core",
-                "C#",
-                "EF Core",
-                "SQLite",
-                "JWT",
-                "Gemini API",
                 "React",
                 "TypeScript",
-                "Tailwind CSS",
-                "Vercel",
-                "Railway",
+                "Gemini API",
+                "JWT",
+                "SQLite",
+                "RAG",
               ]}
             />
           </Col>
@@ -58,7 +54,7 @@ function Projects() {
               imgPath={bankingDashboard}
               isBlog={false}
               title="Banking Microservices Application"
-              description="A deployed banking application built with Spring Boot and Angular. Includes JWT authentication, role-based access for customers and admins, account management, deposits, withdrawals, transaction history, CSV export, analytics charts, H2 for development, and Supabase PostgreSQL in production."
+              description="A deployed banking app with account management, deposits, withdrawals, transaction history, CSV export, and analytics dashboards. Supports JWT authentication and role-based access for customer and admin workflows."
               ghLink="https://github.com/MostafizFahim/banking-microservices"
               demoLink="https://banking-microservices-eta.vercel.app/login"
               demoLink2="https://banking-api-production-247d.up.railway.app"
@@ -72,8 +68,6 @@ function Projects() {
                 "PostgreSQL",
                 "JWT",
                 "Chart.js",
-                "Railway",
-                "Vercel",
               ]}
             />
           </Col>
@@ -83,7 +77,7 @@ function Projects() {
               imgPath={nextrip}
               isBlog={false}
               title="NexTrip: Hybrid Blockchain Ride-Sharing Platform"
-              description="Thesis project: a decentralized ride-sharing platform using React.js, Ethereum smart contracts, Hyperledger Fabric, IPFS-backed design concepts, and React Native. The work connects privacy-preserving blockchain research with full-stack ride-sharing workflows."
+              description="Thesis project for a decentralized ride-sharing platform with web, mobile, and blockchain layers. Combines Ethereum smart contracts, Hyperledger Fabric, and privacy-preserving storage concepts."
               ghLink="https://github.com/MostafizFahim/Ride-Sharing-Dapp-Web-Thesis-project.git"
               demoLink2="https://github.com/MostafizFahim/NexTrip-Ride-Sharing-Dapp-Mobile.git"
               demoLink2Text="Mobile App"
@@ -93,7 +87,6 @@ function Projects() {
                 "Ethereum",
                 "Hyperledger Fabric",
                 "Node.js",
-                "Web3.js",
                 "IPFS",
               ]}
             />

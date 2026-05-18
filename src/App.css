@@ -355,9 +355,9 @@
 }
 
 .project-card-view .card-img-top {
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  height: 200px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 180px;
   object-fit: cover;
 }
 
@@ -892,67 +892,6 @@
   margin: 18px 0 0 50px;
 }
 
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin: 28px 0 0 50px;
-}
-
-.hero-action {
-  align-items: center;
-  border: 1px solid rgba(142, 230, 209, 0.45);
-  border-radius: 999px;
-  color: #f8f9fa;
-  display: inline-flex;
-  gap: 8px;
-  justify-content: center;
-  min-height: 44px;
-  padding: 9px 18px;
-  text-decoration: none;
-  transition: all 0.25s ease;
-}
-
-.hero-action:hover {
-  background: rgba(142, 230, 209, 0.12);
-  color: #ffffff;
-  transform: translateY(-2px);
-}
-
-.hero-action-primary {
-  background: linear-gradient(135deg, #7c3aed 0%, #0f9f91 100%);
-  border-color: transparent;
-}
-
-.hero-proof-strip {
-  display: grid;
-  gap: 12px;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin: 28px 0 0 50px;
-  max-width: 640px;
-}
-
-.hero-proof-strip div {
-  border: 1px solid rgba(142, 230, 209, 0.2);
-  border-radius: 8px;
-  background: rgba(12, 18, 32, 0.62);
-  padding: 12px 14px;
-}
-
-.hero-proof-strip strong {
-  color: #8ee6d1;
-  display: block;
-  font-size: 1.35rem;
-  line-height: 1.1;
-}
-
-.hero-proof-strip span {
-  color: #d8d9ff;
-  display: block;
-  font-size: 0.86rem;
-  margin-top: 4px;
-}
-
 .hero-type {
   padding: 34px 0 0 50px;
   text-align: left;
@@ -963,15 +902,61 @@
   flex-direction: column;
 }
 
+.project-card-view .card-title {
+  font-size: 1.15rem !important;
+  line-height: 1.35;
+  min-height: 3rem;
+  text-align: left;
+}
+
+.project-description {
+  color: #e7e2ef !important;
+  font-size: 0.95rem;
+  line-height: 1.52;
+  margin-bottom: 16px !important;
+  text-align: left !important;
+}
+
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.tech-badges .tech-badge {
+  border-radius: 7px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 !important;
+  padding: 5px 8px;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+}
+
 .project-card-view .btn {
-  align-self: flex-start;
+  align-items: center;
+  border-radius: 9px !important;
+  display: inline-flex;
+  font-size: 0.92rem;
+  gap: 7px;
+  justify-content: center;
   margin-bottom: 8px;
+  margin-left: 0 !important;
+  min-height: 40px;
+  padding: 8px 14px;
   white-space: normal;
 }
 
-.research-profile-link {
-  display: inline-flex;
-  margin-top: 12px;
+.project-card-view .btn-outline-primary {
+  background: rgba(124, 58, 237, 0.08);
 }
 
 .paper-link {
@@ -982,6 +967,38 @@
 
 .paper-link:hover {
   color: #81e6d9;
+}
+
+.research-profile-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+}
+
+.research-profile-link {
+  align-items: center;
+  background: rgba(79, 209, 197, 0.12);
+  border: 1px solid rgba(79, 209, 197, 0.55);
+  border-radius: 9px;
+  color: #7ff5e8;
+  display: inline-flex;
+  font-weight: 700;
+  gap: 10px;
+  min-height: 44px;
+  padding: 10px 18px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.research-profile-link:hover {
+  background: rgba(79, 209, 197, 0.2);
+  border-color: #7ff5e8;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.research-profile-external {
+  font-size: 0.78rem;
 }
 
 .more-info-section {
@@ -1028,8 +1045,6 @@
 @media (max-width: 767px) {
   .hero-eyebrow,
   .hero-summary,
-  .hero-actions,
-  .hero-proof-strip,
   .hero-type {
     margin-left: 0;
     padding-left: 0;
@@ -1039,21 +1054,16 @@
     font-size: 0.98rem;
   }
 
-  .hero-proof-strip {
-    grid-template-columns: 1fr;
-  }
-
   .hero-type .Typewriter__wrapper {
     display: inline-block !important;
     position: static !important;
   }
 
-  .hero-actions {
-    align-items: stretch;
-    flex-direction: column;
+  .project-card-view .card-title {
+    min-height: 0;
   }
 
-  .hero-action {
-    width: 100%;
+  .project-actions .btn {
+    flex: 1 1 100%;
   }
 }

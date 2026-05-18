@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Card, Badge } from "react-bootstrap";
-import { FaFilePdf, FaCertificate } from "react-icons/fa";
+import { FaFilePdf, FaCertificate, FaResearchgate, FaExternalLinkAlt } from "react-icons/fa";
 import Particle from "../Particle";
 
 function Publications() {
@@ -76,14 +76,19 @@ function Publications() {
               Contributions to blockchain systems, machine learning, and applied
               AI research
             </p>
-            <a
-              className="paper-link research-profile-link"
-              href="https://www.researchgate.net/profile/Mostafiz-Fahim/research"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View ResearchGate Profile
-            </a>
+            <div className="research-profile-actions">
+              <a
+                className="research-profile-link"
+                href="https://www.researchgate.net/profile/Mostafiz-Fahim/research"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open Mostafiz Fahim ResearchGate profile"
+              >
+                <FaResearchgate />
+                <span>ResearchGate Profile</span>
+                <FaExternalLinkAlt className="research-profile-external" />
+              </a>
+            </div>
           </Col>
         </Row>
 
