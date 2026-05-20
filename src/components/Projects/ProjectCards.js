@@ -9,7 +9,12 @@ function ProjectCards(props) {
   return (
     <Card className="project-card-view">
       {/* Project Thumbnail */}
-      <Card.Img variant="top" src={props.imgPath} alt="project-img" />
+      <Card.Img
+        variant="top"
+        src={props.imgPath}
+        alt={`${props.title} screenshot`}
+        className="project-thumbnail"
+      />
 
       <Card.Body>
         {/* Title */}

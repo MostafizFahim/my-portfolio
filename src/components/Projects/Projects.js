@@ -11,7 +11,7 @@ import zombie from "../../Assets/Projects/zombie.png";
 import buildingPlayground from "../../Assets/Projects/building-playground.png";
 import bankingDashboard from "../../Assets/Projects/bankingDashboard.png";
 import keystone from "../../Assets/Projects/keystone.png";
-import codeEditor from "../../Assets/Projects/codeEditor.png";
+import aiKnowledgeBaseDashboard from "../../Assets/Projects/ai-knowledge-base-dashboard.svg";
 import projectImg from "../../Assets/Projects/project.png";
 
 function Projects() {
@@ -29,7 +29,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={codeEditor}
+              imgPath={aiKnowledgeBaseDashboard}
               isBlog={false}
               title="AI Knowledge Base Assistant"
               description="A deployed document Q&A platform with secure auth, PDF/CSV uploads, chat history, and Gemini-powered answers. Uses lightweight RAG with document chunking, keyword retrieval, and context-aware prompt construction."
