@@ -13,13 +13,13 @@ function AboutCard() {
             <span className="purple">Dhaka, Bangladesh.</span>
             <br />
             I graduated in Computer Science and Engineering from Ahsanullah
-            University of Science and Technology (AUST), and I am now building
-            enterprise banking features as a Java Developer Intern at Sonali
-            Intellect Limited.
+            University of Science and Technology (AUST), and I am currently a
+            Software Engineer at Sonali Intellect Limited — building enterprise
+            banking systems, backend services, and production-ready applications.
             <br />
-            I enjoy turning ideas into working software: backend services,
-            secure APIs, full-stack products, AI-assisted workflows, and
-            research-driven blockchain systems.
+            I enjoy turning ideas into working software: scalable backend
+            systems, secure APIs, full-stack products, AI-powered solutions,
+            and research-driven blockchain systems.
             <br />
             <br />
             Outside daily engineering work, I like spending time on:
@@ -27,7 +27,10 @@ function AboutCard() {
 
           <ul>
             <li className="about-activity">
-              <ImPointRight /> AI knowledge-base and document Q&A systems
+              <ImPointRight /> AI Engineering, LLM apps, and agentic AI workflows
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> Deep learning research and computer vision models
             </li>
             <li className="about-activity">
               <ImPointRight /> Open-source projects and GitHub experiments

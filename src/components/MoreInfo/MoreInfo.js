@@ -27,7 +27,7 @@ function MoreInfo() {
             <Card className="info-card">
               <Card.Body>
                 <div className="d-flex justify-content-between flex-wrap">
-                  <h5 className="info-item-title">Java Developer Intern</h5>
+                  <h5 className="info-item-title">Software Engineer</h5>
                   <span className="info-date">Feb 2026 - Present</span>
                 </div>
                 <p className="info-institution">
@@ -35,8 +35,8 @@ function MoreInfo() {
                 </p>
                 <ul className="info-details">
                   <li>
-                    Developing backend services with Java 17, Spring Boot, REST
-                    APIs, and relational databases.
+                    Developing backend services with Java 17, Spring Boot,
+                    Spring MVC, REST APIs, and relational databases.
                   </li>
                   <li>
                     Contributing to enterprise banking applications with
@@ -46,6 +46,10 @@ function MoreInfo() {
                   <li>
                     Working with MySQL and MS SQL Server for data modeling,
                     query handling, and transaction-based features.
+                  </li>
+                  <li>
+                    Learning Spring Core, Thymeleaf, Hibernate, and JPA for
+                    enterprise Java development.
                   </li>
                   <li>
                     Built a JSP/Servlet Task Management System using MVC,
@@ -209,6 +213,8 @@ function MoreInfo() {
                   <Col md={6}>
                     <h6 className="info-subtitle">Interests</h6>
                     <ul className="info-details">
+                      <li>AI Engineering & LLM applications</li>
+                      <li>Deep learning & computer vision</li>
                       <li>Robotics</li>
                       <li>Hackathons</li>
                       <li>Football</li>

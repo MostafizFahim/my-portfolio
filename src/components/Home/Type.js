@@ -8,8 +8,9 @@ function Type() {
         strings: [
           "Java & Spring Boot Developer",
           "ASP.NET Core Full-Stack Engineer",
-          "AI Knowledge Base Builder",
+          "AI & Deep Learning Engineer",
           "React, Angular & TypeScript Developer",
+          "AI Engineer & LLM App Builder",
           "Blockchain Research Contributor",
         ],
         autoStart: true,

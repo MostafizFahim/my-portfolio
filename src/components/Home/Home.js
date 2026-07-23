@@ -14,7 +14,7 @@ function Home() {
           <Row>
             <Col md={7} className="home-header">
               <p className="hero-eyebrow">
-                Java Developer Intern | Full-Stack Software Engineer
+                Software Engineer | Full-Stack Developer | Java & Spring Boot
               </p>
 
               <h1 style={{ paddingBottom: 15 }} className="heading">
@@ -27,9 +27,10 @@ function Home() {
               </h1>
 
               <p className="hero-summary">
-                I build secure web platforms, banking applications, and
-                AI-assisted systems with Java, Spring Boot, ASP.NET Core,
-                React, Angular, and cloud deployment workflows.
+                I build enterprise banking systems, full-stack web applications,
+                and AI-powered solutions with Java, Spring Boot, ASP.NET Core,
+                React, Angular, and cloud deployment workflows — while exploring
+                AI Engineering, LLM applications, and agentic AI.
               </p>
 
               <div className="hero-type">
