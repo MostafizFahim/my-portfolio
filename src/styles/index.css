@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+  body {
+    background-color: #09090b;
+    color: #f4f4f5;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
