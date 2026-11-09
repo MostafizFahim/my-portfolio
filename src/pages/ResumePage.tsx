@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Download, ExternalLink, FileText, Mail, MapPin, Briefcase, GraduationCap, Award, Shield, CheckCircle2, AlertCircle } from 'lucide-react';
+import { Download, ExternalLink, FileText, Mail, MapPin, Briefcase, GraduationCap, Award, Shield, CheckCircle2 } from 'lucide-react';
 import Container from '../components/common/Container';
 import Button from '../components/common/Button';
 import Badge from '../components/common/Badge';
@@ -78,14 +78,6 @@ export const ResumePage: React.FC = () => {
               Open in New Tab
             </Button>
           </div>
-        </div>
-
-        {/* Informative CV Status Notice */}
-        <div className="p-4 rounded-xl bg-zinc-900/80 border border-zinc-800 text-xs text-zinc-400 flex items-start gap-3">
-          <AlertCircle className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
-          <p className="leading-relaxed">
-            <strong className="text-zinc-200">Document Availability:</strong> The embedded viewer displays the preserved resume asset (<code className="text-cyan-300 font-mono">Mostafiz_Fahim_CV.pdf</code>). An updated official CV file will be attached soon. The summary below is dynamically synced with verified portfolio records.
-          </p>
         </div>
 
         {/* Two Column Layout: Structured Overview + Embedded PDF Preview */}
