@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import Publications from "./components/Publications/Publications";
 import MoreInfo from "./components/MoreInfo/MoreInfo";
+import ProjectDetailPage from "./pages/ProjectDetailPage";
 import {
   BrowserRouter as Router,
   Route,
@@ -34,6 +35,8 @@ function App() {
         <main id="main-content" className="flex-1 flex flex-col">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/projects/:slug" element={<ProjectDetailPage />} />
+            <Route path="/projects" element={<Navigate to="/#projects" replace />} />
             <Route path="/project" element={<Projects />} />
             <Route path="/about" element={<About />} />
             <Route path="/resume" element={<Resume />} />
