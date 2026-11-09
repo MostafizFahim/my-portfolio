@@ -162,7 +162,7 @@ public/
   - *Company Context:* Leading enterprise banking software company providing core banking solutions for **Sonali Bank** and **Rupali Bank**.
 * **Positions & Timeline:**
   - **Functional Engineer (Permanent):** 1 August 2026 – Present
-  - **Functional Engineer Intern:** 1 February 2026 – 31 July 2026
+  - **Java Developer Intern:** 1 February 2026 – 31 July 2026
 * **Verified Technical Scope (Java-Related):**
   - Developing and maintaining backend services using **Java 17/21, Spring Boot, Spring MVC**, and relational databases.
   - Contributing to core banking applications, transaction processing workflows, and secure API integrations.
@@ -381,7 +381,7 @@ timeline
 ## 12. Final Implementation Rules
 
 1. **Do not invent** professional experience, project ownership, metrics, or research outcomes.
-2. **Present exact verified designation:** Functional Engineer (Permanent, Aug 2026–Present) and Functional Engineer Intern (Feb 2026–Jul 2026) at Sonali Intellect Limited.
+2. **Present exact verified designation:** Functional Engineer (Permanent, Aug 2026–Present) and Java Developer Intern (Feb 2026–Jul 2026) at Sonali Intellect Limited.
 3. **Distinguish strictly** between commercial employment, personal projects, implementation contributions, and group projects.
 4. **Protect confidentiality completely:** Never publish proprietary code, internal architecture diagrams, or private repository links.
 5. **Do not present** AgroNet as a published paper.

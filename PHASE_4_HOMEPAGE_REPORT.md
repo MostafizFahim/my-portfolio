@@ -17,7 +17,7 @@ The homepage accurately communicates the user's targeted engineering positioning
 
 Every section strictly complies with verified employment and academic records:
 - **Commercial Employer:** Sonali Intellect Limited (SIL) — enterprise core banking software for Sonali Bank and Rupali Bank.
-- **Tenure:** Functional Engineer (Permanent, Aug 2026 – Present) and Functional Engineer Intern (Feb 2026 – Jul 2026).
+- **Tenure:** Functional Engineer (Permanent, Aug 2026 – Present) and Java Developer Intern (Feb 2026 – Jul 2026).
 - **Publications:** All 4 verified papers (Springer, IEEE ICCIT 2025, IEEE QPAIN 2025, IJAIT) explicitly state **2nd Author**.
 - **Ownership Transparency:** Tier 1 projects explicitly label individual work, thesis collaborations, group efforts, and contributions (e.g., AgroNet is accurately attributed as an implementation contribution to sister's project, with no publication claim).
 - **Confidentiality:** Zero proprietary workplace source code, internal office repos, or confidential architecture schemas are exposed.
@@ -49,7 +49,7 @@ Every section strictly complies with verified employment and academic records:
 - **Company Context Card:** Sonali Intellect Limited (SIL) — leading core banking provider for Sonali Bank and Rupali Bank.
 - **Timeline Progression:**
   - **Functional Engineer (Permanent, Aug 2026 – Present):** 5 verified responsibilities covering Java 17/21, Spring Boot microservices, transaction integrity, and database tuning.
-  - **Functional Engineer Intern (Feb 2026 – Jul 2026):** 6-month formal engineering internship.
+  - **Java Developer Intern (Feb 2026 – Jul 2026):** 6-month formal engineering internship.
   - **Internship Deliverables Highlighted:**
     - *Task Management System:* Full MVC web application with authentication and relational data workflows (Java, JSP, Servlets, MySQL).
     - *Asset Tagging System:* Organizational hardware and digital asset monitoring application (Java, Spring, MySQL).

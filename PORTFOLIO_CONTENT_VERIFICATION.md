@@ -21,7 +21,7 @@ This document serves as the official, binding record of truth for all content to
 | Field | User-Verified Fact | Public Presentation Guidelines |
 | :--- | :--- | :--- |
 | **Actual Employer** | **Sonali Intellect Limited (SIL)** | Company provides core banking software solutions for **Sonali Bank** and **Rupali Bank**. |
-| **Official Designation** | **Functional Engineer** in SIL | Use exact verified designation: **Functional Engineer** (Permanent) and **Functional Engineer Intern** (Internship). |
+| **Official Designation** | **Functional Engineer** in SIL | Use exact verified designation: **Functional Engineer** (Permanent) and **Java Developer Intern** (Internship). |
 | **Internship Period** | **1 February 2026 – 31 July 2026** | Represented accurately as a 6-month formal engineering internship. |
 | **Permanent Role Start Date** | **1 August 2026 – Present** | Full-time permanent appointment following internship completion. |
 | **Eastern Bank Limited (EBL) Relation** | **None** | Explicitly confirmed: **No relationship with EBL**. Omitted completely. |

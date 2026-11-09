@@ -25,7 +25,7 @@ export const experienceData: Experience = {
       ],
     },
     {
-      title: 'Functional Engineer Intern',
+      title: 'Java Developer Intern',
       type: 'internship',
       period: 'February 2026 – July 2026',
       startDate: '2026-02',
