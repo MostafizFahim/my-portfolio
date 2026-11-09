@@ -64,7 +64,7 @@ export const ProjectsSection: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent" />
 
                 {/* Top Overlay Badges */}
-                <div className="absolute top-3 left-3 right-3 flex items-center justify-between gap-2">
+                <div aria-hidden="true" className="absolute top-3 left-3 right-3 flex items-center justify-between gap-2">
                   <Badge variant="cyan" size="sm" mono>
                     {project.categoryLabel}
                   </Badge>

@@ -79,9 +79,12 @@ export const Navbar: React.FC = () => {
           <Link
             to="/"
             className="flex items-center gap-3 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded-lg p-1"
-            aria-label="Mostafiz Fahim Homepage"
+            aria-label="Mostafiz Fahim - Functional Engineer"
           >
-            <div className="w-9 h-9 rounded-lg bg-cyan-950/60 border border-cyan-500/40 flex items-center justify-center text-cyan-300 font-mono font-bold text-sm shadow-sm group-hover:border-cyan-400 group-hover:shadow-glow-cyan-sm transition-all">
+            <div
+              aria-hidden="true"
+              className="w-9 h-9 rounded-lg bg-cyan-950/60 border border-cyan-500/40 flex items-center justify-center text-cyan-300 font-mono font-bold text-sm shadow-sm group-hover:border-cyan-400 group-hover:shadow-glow-cyan-sm transition-all"
+            >
               MF
             </div>
             <div className="flex flex-col text-left">
