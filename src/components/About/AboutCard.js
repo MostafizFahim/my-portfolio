@@ -12,9 +12,9 @@ function AboutCard() {
             <span className="purple">Mostafizur Rahman Fahim</span> from{" "}
             <span className="purple">Dhaka, Bangladesh.</span>
             <br />
-            I graduated in Computer Science and Engineering from Ahsanullah
+            I graduated with a Bachelor of Science in Computer Science & Engineering from Ahsanullah
             University of Science and Technology (AUST), and I am currently a
-            Software Engineer at Sonali Intellect Limited — building enterprise
+            Functional Engineer at Sonali Intellect Limited — building enterprise
             banking systems, backend services, and production-ready applications.
             <br />
             I enjoy turning ideas into working software: scalable backend

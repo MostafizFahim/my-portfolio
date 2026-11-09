@@ -27,8 +27,8 @@ function MoreInfo() {
             <Card className="info-card">
               <Card.Body>
                 <div className="d-flex justify-content-between flex-wrap">
-                  <h5 className="info-item-title">Software Engineer</h5>
-                  <span className="info-date">Feb 2026 - Present</span>
+                  <h5 className="info-item-title">Functional Engineer</h5>
+                  <span className="info-date">August 2026 – Present</span>
                 </div>
                 <p className="info-institution">
                   Sonali Intellect Limited, Dhaka, Bangladesh
@@ -135,9 +135,9 @@ function MoreInfo() {
                 </div>
                 <div className="d-flex justify-content-between flex-wrap">
                   <p className="info-detail">
-                    Bachelor of Science in Computer Science and Engineering
+                    Bachelor of Science in Computer Science &amp; Engineering
                   </p>
-                  <span className="info-date">Dec 2021 - Dec 2025</span>
+                  <span className="info-date">December 2021 – December 2025</span>
                 </div>
                 <p className="info-meta">
                   <em>CGPA: 3.105 / 4.00</em>

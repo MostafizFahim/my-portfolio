@@ -17,7 +17,7 @@ function Home2() {
             <p className="home-about-body">
               I am a Computer Science and Engineering graduate from{" "}
               <b className="purple">AUST</b> and currently a{" "}
-              <b className="purple">Software Engineer at Sonali Intellect Limited</b>,
+              <b className="purple">Functional Engineer at Sonali Intellect Limited</b>,
               building enterprise banking features and backend services.
               <br />
               <br />I work across{" "}
