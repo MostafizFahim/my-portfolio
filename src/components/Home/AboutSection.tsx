@@ -29,7 +29,7 @@ export const AboutSection: React.FC = () => {
           </p>
 
           <p>
-            I graduated with a <strong className="text-white font-medium">Bachelor of Science in Computer Science and Engineering</strong> from{' '}
+            I graduated with a <strong className="text-white font-medium">Bachelor of Science in Computer Science &amp; Engineering</strong> from{' '}
             <span className="text-zinc-100 font-medium">Ahsanullah University of Science and Technology (AUST)</span>. During my academic career, I co-authored{' '}
             <strong className="text-cyan-300 font-medium">4 peer-reviewed research publications</strong> published through Springer, IEEE ICCIT 2025, IEEE QPAIN 2025, and IJAIT, serving as 2nd Author on each study.
           </p>

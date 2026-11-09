@@ -11,7 +11,7 @@
 
 Phase 6 completes the content, deep-dive academic and professional documentation, and dedicated utility pages for the modernized portfolio:
 1. **Dedicated Publication Detail Pages (`/research/:slug`)**: Implemented dynamic routing and rich technical case studies for all 4 verified peer-reviewed publications. Each page presents verified authorship (*2nd Author*), problem motivation, methodology, specific contributions, empirical findings, indexing badges (Springer, IEEE Xplore, IJAIT), DOI/external links, and an interactive one-click BibTeX copy citation generator with toast feedback.
-2. **Dedicated Resume Page (`/resume`)**: Built an interactive resume viewing page (`src/pages/ResumePage.tsx`) featuring an embedded PDF viewer for `public/Mostafiz_Fahim_CV.pdf`, quick actions to download or view in a new tab, a responsive mobile fallback, and an interactive summary of verified industry experience (SIL Functional Engineer & Java Developer Intern), education (AIUB B.Sc. in CSE, Magna Cum Laude), and core engineering proficiencies.
+2. **Dedicated Resume Page (`/resume`)**: Built an interactive resume viewing page (`src/pages/ResumePage.tsx`) featuring an embedded PDF viewer for `public/Mostafiz_Fahim_CV.pdf`, quick actions to download or view in a new tab, a responsive mobile fallback, and an interactive summary of verified industry experience (SIL Functional Engineer & Java Developer Intern), education (AUST B.Sc. in CSE, CGPA 3.105 / 4.00), and core engineering proficiencies.
 3. **Seamless Navigation & Routing Integration**: Connected the homepage research cards directly to their dedicated case study pages (`/research/:slug`) while preserving direct links to official publisher portals and copyable BibTeX modal triggers. Added route redirects (`/publications` -> `/#research`) and configured smooth scroll navigation back to home sections.
 4. **Comprehensive System & Content Audit**:
    - Zero occurrences of `Functional Engineer Intern` anywhere in the codebase.
@@ -69,7 +69,7 @@ All 4 publications accurately document Mostafizur Rahman Fahim as **2nd Author**
    - For viewports where embedded PDF rendering is restricted or suboptimal (mobile devices), an alert banner offers immediate single-tap download or full-screen viewing.
    - Accompanied by structured HTML cards summarizing:
      - **Professional Experience**: SIL Functional Engineer & Java Developer Intern.
-     - **Education**: American International University-Bangladesh (B.Sc. in CSE, Magna Cum Laude, CGPA 3.82/4.00).
+     - **Education**: Ahsanullah University of Science and Technology (AUST) (Bachelor of Science in Computer Science & Engineering, Dec 2021 – Dec 2025, CGPA 3.105 / 4.00).
      - **Key Technical Skills**: Core Java, Spring Boot, Python, AI/ML, React, PostgreSQL, Docker, Git.
 
 ---

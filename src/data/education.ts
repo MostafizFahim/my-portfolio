@@ -1,7 +1,7 @@
 import { Education } from '../types/education.types';
 
 export const educationData: Education = {
-  degree: 'Bachelor of Science in Computer Science and Engineering',
+  degree: 'Bachelor of Science in Computer Science & Engineering',
   field: 'Computer Science and Engineering (CSE)',
   institution: 'Ahsanullah University of Science and Technology',
   institutionShort: 'AUST',
