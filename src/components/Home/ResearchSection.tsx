@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { BookOpen, ExternalLink, Copy, Check, FileText, Award } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { BookOpen, ExternalLink, Copy, Check, ArrowRight } from 'lucide-react';
 import Section from '../common/Section';
 import SectionHeading from '../common/SectionHeading';
 import Card, { CardHeader, CardTitle, CardContent } from '../common/Card';
@@ -51,12 +52,26 @@ export const ResearchSection: React.FC = () => {
                     </Badge>
                   </div>
 
-                  <CardTitle as="h3" className="text-lg sm:text-xl font-bold text-white leading-snug">
-                    {pub.title}
-                  </CardTitle>
+                  <Link
+                    to={`/research/${pub.slug}`}
+                    className="hover:text-cyan-300 transition-colors inline-block"
+                  >
+                    <CardTitle as="h3" className="text-lg sm:text-xl font-bold text-white leading-snug">
+                      {pub.title}
+                    </CardTitle>
+                  </Link>
                 </div>
 
-                <div className="flex items-center gap-2 self-start flex-shrink-0">
+                <div className="flex flex-wrap items-center gap-2 self-start flex-shrink-0">
+                  <Button
+                    href={`/research/${pub.slug}`}
+                    variant="primary"
+                    size="sm"
+                    iconRight={<ArrowRight className="w-3.5 h-3.5" />}
+                  >
+                    Details
+                  </Button>
+
                   {pub.paperUrl && (
                     <Button
                       href={pub.paperUrl}
@@ -64,9 +79,10 @@ export const ResearchSection: React.FC = () => {
                       size="sm"
                       iconRight={<ExternalLink className="w-3.5 h-3.5" />}
                     >
-                      View Paper
+                      Official Paper
                     </Button>
                   )}
+
                   {pub.bibtex && (
                     <Button
                       variant="ghost"
@@ -103,7 +119,7 @@ export const ResearchSection: React.FC = () => {
                           key={cIdx}
                           className="text-xs text-zinc-400 leading-relaxed flex items-start gap-2"
                         >
-                          <span className="text-cyan-400 mt-1">•</span>
+                          <span className="text-cyan-400 mt-1">&bull;</span>
                           <span>{contrib}</span>
                         </li>
                       ))}

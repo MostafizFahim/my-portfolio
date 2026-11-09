@@ -6,6 +6,7 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'danger';
   size?: 'sm' | 'md' | 'lg';
   href?: string;
+  download?: string | boolean;
   external?: boolean;
   iconLeft?: React.ReactNode;
   iconRight?: React.ReactNode;
@@ -21,6 +22,7 @@ export const Button = React.forwardRef<HTMLButtonElement | HTMLAnchorElement, Bu
       variant = 'primary',
       size = 'md',
       href,
+      download,
       external,
       iconLeft,
       iconRight,
@@ -109,6 +111,7 @@ export const Button = React.forwardRef<HTMLButtonElement | HTMLAnchorElement, Bu
             href={href}
             target="_blank"
             rel="noopener noreferrer"
+            download={typeof download === 'string' ? download : download ? '' : undefined}
             className={baseClasses}
             aria-disabled={disabled || isLoading}
           >
@@ -123,6 +126,7 @@ export const Button = React.forwardRef<HTMLButtonElement | HTMLAnchorElement, Bu
           <a
             ref={ref as React.Ref<HTMLAnchorElement>}
             href={href}
+            download={typeof download === 'string' ? download : download ? '' : undefined}
             className={baseClasses}
             aria-disabled={disabled || isLoading}
           >
